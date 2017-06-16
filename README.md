@@ -8,12 +8,15 @@ it became AES.
 the usage is as followed :
 
 rijndael_encrypt(string plainText, string key, long keyBits);
+
 rijndael_decrypt(string ciphered, string key, long keyBits);
 
 The following keyBits/KeySize
 
 128 = 16 character key.
+
 192 = 24 character key.
+
 256 = 32 character key.
 
 # [ Notes ]
@@ -52,8 +55,12 @@ for fpm, simply restart the daemon via "sudo service php7.0-fpm reload/restart"
 
 # [ Author ]
 PHP Extension : Hect0r Xorius <staticpi.net@gmail.com> - StaticPi.net
+
 Rijndael : Vincent Rijmen <vincent.rijmen@esat.kuleuven.ac.be>
+
            Antoon Bosselaers <antoon.bosselaers@esat.kuleuven.ac.be>
+           
            Paulo Barreto <paulo.barreto@terra.com.br>
+           
  # [ With Thanks ]
  Team-Xecuter, Se7ensins, ABGX360 (All the Staff and Developers)
