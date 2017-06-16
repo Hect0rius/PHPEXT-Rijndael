@@ -1,0 +1,11 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE("rijndael", "rijndael support", "no");
+
+if (PHP_RIJNDAEL != "no") {
+
+	EXTENSION("rijndael", "php_rijndael.c rijndael.c");
+
+	AC_DEFINE('HAVE_RIJNDAEL', 1, 'Have Rijndael support');
+}
