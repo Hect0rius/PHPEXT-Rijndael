@@ -1,10 +1,30 @@
 # PHPEXT-Rijndael
 This PHP extension has been built to aid XEX decryption from within PHP itself, It uses the Rijndael code from abgx360 tool.
 
+# [ Basic Usage ]
+There are 2 functions, rijndael_encrypt and rijndael_decrypt, They do not support IV's, this is the original code before 
+it became AES.
+
+the usage is as followed :
+
+<?php
+
+rijndael_encrypt(string plainText, string key, long keyBits);
+rijndael_decrypt(string ciphered, string key, long keyBits);
+
+?>
+
+The following keyBits/KeySize
+
+128 = 16 character key.
+192 = 24 character key.
+256 = 32 character key.
+
 # [ Notes ]
 There is currently a error within the code somewhere, as I am new to writing extensions (my first one) I have noticed it will
-encrypt and decrypt correctly, however it adds on a extra 6 bytes at the end of the string, this is a overflow I believe and
+encrypt and decrypt correctly, however it adds on a extra chars at the end of the string, this is a overflow I believe and
 I will keep on hunting it down until I fix it.
+
 
 # [ Installing ]
 - Linux/Ubuntu (PHP-FPM/PHP-CLI):
