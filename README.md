@@ -7,12 +7,8 @@ it became AES.
 
 the usage is as followed :
 
-<?php
-
 rijndael_encrypt(string plainText, string key, long keyBits);
 rijndael_decrypt(string ciphered, string key, long keyBits);
-
-?>
 
 The following keyBits/KeySize
 
