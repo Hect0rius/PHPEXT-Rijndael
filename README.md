@@ -21,8 +21,8 @@ The following keyBits/KeySize
 
 # [ Notes ]
 There is currently a error within the code somewhere, as I am new to writing extensions (my first one) I have noticed it will
-encrypt and decrypt correctly, however it adds on a extra chars at the end of the string, this is a overflow I believe and
-I will keep on hunting it down until I fix it.
+encrypt and decrypt correctly however it adds padding onto the end of the string, since it should only accept a 16 character string, simply use substr to amend the extra padding, for more information checkout : https://stackoverflow.com/questions/44591397/building-a-php-extension-using-original-rijndael-correct-encryption-decrypt-how
+Big thanks to zaph for their advice.
 
 
 # [ Installing ]
@@ -56,7 +56,8 @@ for fpm, simply restart the daemon via "sudo service php7.0-fpm reload/restart"
 # [ Author ]
 PHP Extension : Hect0r Xorius <staticpi.net@gmail.com> - StaticPi.net
 
-Rijndael : Vincent Rijmen <vincent.rijmen@esat.kuleuven.ac.be>
+Rijndael : 
+           Vincent Rijmen <vincent.rijmen@esat.kuleuven.ac.be>
 
            Antoon Bosselaers <antoon.bosselaers@esat.kuleuven.ac.be>
            
