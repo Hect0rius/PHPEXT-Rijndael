@@ -1,5 +1,5 @@
 # PHPEXT-Rijndael
-This PHP extension has been built to aid XEX decryption from within PHP itself, It uses the Rijndael code from abgx360 tool.
+This PHP extension has been built to aid none IV supported encryption/decryption from within PHP itself., It uses the Rijndael code from abgx360 tool.
 
 # [ Basic Usage ]
 There are 2 functions, rijndael_encrypt and rijndael_decrypt, They do not support IV's, this is the original code before 
